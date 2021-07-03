@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- 1. link bootstrap.css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <style>
+    body {
+      height: 100vh;
+      background: url(./background.jpg) no-repeat center center/cover;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      position: relative;
+    }
+
+
+    .user {
+      position: relative;
+      display: inline-block
+    }
+
+    .user:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f007";
+      font-size: 20px;
+      position: absolute;
+      left: 4px;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+
+    .user input {
+      text-indent: 20px;
+    }
+
+    .password {
+      position: relative;
+      display: inline-block
+    }
+
+    .password:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f023";
+      font-size: 20px;
+      position: absolute;
+      left: 4px;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+
+    .password input {
+      text-indent: 20px;
+    }
+
+    .container::before {
+      content: '';
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 1px solid black;
+      position: absolute;
+      top: -20%;
+      background: rgba(3, 31, 128, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .container::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f007";
+      font-size: 60px;
+      position: absolute;
+      position: absolute;
+      top: -18%;
+    }
+  </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+  <div class="container  h-50 w-25 d-flex align-items-center justify-content-center  ">
+    <form>
+      <div class="form-group">
+        <h2 class="d-flex justify-content-center text-white mb-3">Sign in</h2>
+        <div class="user mb-3"><input type="text" class="form-control" placeholder="User name"></div>
+      </div>
+      <div class="form-group">
+        <div class="password mb-3"><input type="password" class="form-control" placeholder="Password"></div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">Log in</button>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+        <label class="form-check-label" for="exampleCheck2">Forget Password?</label>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
